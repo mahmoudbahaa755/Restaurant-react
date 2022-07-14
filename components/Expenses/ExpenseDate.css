@@ -1,0 +1,11 @@
+.expense-date{
+    border: 1px solid whitesmoke;
+    border-radius: 12px;
+    width: 70px;
+    height: 70px;
+    color: whitesmoke;
+    background: #262526;
+}
+.el{
+    padding: 2px;
+}
