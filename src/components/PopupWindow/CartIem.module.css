@@ -1,0 +1,28 @@
+.name{
+   color: crimson;
+    font-size: 26px;
+    font-weight: 600;
+}
+.flex{
+       display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+}
+.amount{
+
+        border: 1px solid;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    text-align: center;
+    border-radius: 6px;
+    align-items: center;
+    color: darkslategray;
+    justify-content: center;
+}
+.price{
+    color: darkred;
+    font-size: 19px;
+    font-weight: 400;
+}

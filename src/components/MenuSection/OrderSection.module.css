@@ -1,0 +1,37 @@
+.order-section{
+    margin-top: 40px;
+    border-radius: 20px;
+    border:1px solid white ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+        background-color: whitesmoke;
+        margin-bottom: 20px;
+    position: relative;
+    padding: 10px;
+}
+.menu-button{
+    position: absolute;
+    top: -17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.button{
+         background-color: #4D1601;
+    border: none;
+    color: white;
+    /* padding: 0px 10px; */
+    text-align: center;
+    /* display: flex; */
+    font-size: 16px;
+    border-radius: 25px;
+    /* margin: 27px 0px; */
+    cursor: pointer;
+    width: 25%;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    height: 29px;
+}

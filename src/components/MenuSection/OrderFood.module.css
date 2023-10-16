@@ -1,0 +1,70 @@
+.order-food{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    
+}
+
+.order-amount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.order-amount-input{
+        width: 39px;
+    height: 25px;
+    margin-left: 7px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 17px;
+}
+.button{
+            background-color: #4D1601;
+    color: white;
+    padding: 0px 6px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    width: 111%;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+.up-arrow{
+         display: block;
+    width: 10px;
+    height: 10px;
+    border: 8px solid transparent;
+    border-top-color: green;
+}
+.down-arrow{
+           display: block;
+    width: 10px;
+    height: 10px;
+    border: 8px solid transparent;
+    border-bottom-color: green;
+}
+.amount-button{
+        display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.amount-number{
+   font-weight: 700;
+    font-size: 25px;
+}
+label{
+    font-size: 20px;
+    font-weight: 700;
+}

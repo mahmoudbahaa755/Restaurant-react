@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, {useState} from "react";
+import SubHeader from "./components/SubHeader/SubHeader";
+import Header from "./components/Header/Header";
+import MenuSection from "./components/MenuSection/MenuSection";
+import CartOrderNumContext from "./context/CartOrderNumContext";
+import CartWindow from "./components/PopupWindow/CartWindow";
+import CartProvider from './store/CartProvider';
 function App() {
+  const [cartIsShown,setCartIsShown] = useState(false);
+  const [orderNum, setOrderNum] = useState(0);
+  const showCartIsShown = () => {
+    setCartIsShown(true);
+  };
+    const hidCartIsShown = () => {
+      setCartIsShown(false);
+    };
+  // const changeCartIsShown = () => {
+  //     setCartIsShown(!cartIsShown);
+  // };
+  const getOrderNum = (value) => {
+   setOrderNum(()=>{
+    return value;
+   });
+    
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+    {cartIsShown && <CartWindow onClose={hidCartIsShown}/>}
+<CartOrderNumContext.Provider value={{orderNum: orderNum }}>
+        <Header changeCartIsShown={showCartIsShown} />
+// </CartOrderNumContext.Provider>
+        <SubHeader />
+        <main>
+        <MenuSection getOrderNum={getOrderNum} />
+        </main>
+    </CartProvider>
   );
 }
 
