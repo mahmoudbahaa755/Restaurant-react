@@ -5,9 +5,9 @@ import TotalPay from "./TotalPay";
 import OrderConfirm from "./OrderConfirm";
 import Container from "../UI/Container";
 import Button from "../UI/Button";
-import cartContext from "../../store/cart-context";
+
 function CartWindow(props){
-    // const cartCtx= useContext(cartContext);
+    
     const[confirmOrder,setConfirmOrder] =useState(false);
     return (<React.Fragment>
 
