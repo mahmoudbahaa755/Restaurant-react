@@ -1,34 +1,38 @@
-.fixed-header{
+.fixed-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: #8A2B06;
+    background-color:  #2f4f4f;
 
 
 }
-.logo-header{
+
+.logo-header {
     color: white;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-.order-header{
-        display: flex;
+
+.order-header {
+    display: flex;
     list-style: none;
     margin: 0 5px;
     padding: 0;
     justify-content: space-around;
     width: 105%;
 }
-.button{
-      background-color: #4D1601;
+
+.button {
+    background-color: #347373;
     border: none;
-    color: white;
+    color: #8fbc8f;
     padding: 0px 10px;
     text-align: center;
     display: flex;
@@ -41,20 +45,24 @@
     align-items: center;
 }
 
-.button:hover{
+.button:hover {
     background-color: #0D0000;
 }
-svg{
+
+svg {
     width: 20px;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
-.order-counter{
-       background-color: #821100;
+
+.order-counter {
+    background-color: transparent;
     width: fit-content;
     height: fit-content;
     margin: 15px 3px;
+    font-size: large;
+    font-weight: 800;
     border-radius: 50%;
 }

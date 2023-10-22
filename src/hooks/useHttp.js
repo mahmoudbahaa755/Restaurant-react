@@ -4,7 +4,7 @@ import {
 } from "react";
 
 
-function useHttp(){
+export default function useHttp(){
     const fetchingData = useCallback(async (requestConfig, applyData) => {
         const connectFireBase = await fetch(requestConfig.url, {
           method: requestConfig.method ? requestConfig.method :"GET",
@@ -16,10 +16,8 @@ function useHttp(){
          }
         const data = await connectFireBase.json();
         applyData(data);
-        console.log('working');
+
     } ,[]);
    return {fetchingData};
 
 }
-
-export default useHttp;

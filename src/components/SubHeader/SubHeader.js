@@ -6,7 +6,7 @@ function SubHeader(){
     return(
 <React.Fragment>
  <div className={style['main-image']}>
-        <img alt=''  src={subHeaderImg} />
+        <img alt='our food'  src={subHeaderImg} />
       </div>
 
         <div className="container">

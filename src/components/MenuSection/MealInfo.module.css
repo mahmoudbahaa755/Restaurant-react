@@ -1,0 +1,28 @@
+.meal{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+}
+
+.mealImg{
+   
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+.mealInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.mealName{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+.mealPrice{
+    font-size: 20px;
+    font-weight: 600;
+    color: green;
+}

@@ -1,7 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
+:root {
+  /* Primary Colors */
+  --primary-green: #8fbc8f;
+  --primary-blue: #347373;
+
+  /* Accent Colors */
+  --accent-teal: #2f4f4f;
+  --accent-orange: #ffA500;
+
+  /* Background Colors */
+  --background-light: #f0f0f0;
+  --background-dark: #333333;
+
+  /* Text Colors */
+  --text-dark: #222222;
+  --text-light: #ffffff;
+
+  /* Borders */
+  --border-light: #dddddd;
+  --border-dark: #666666;
+}
+
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #1e2e2e;
+  color: var(--text-color);
 }
 
 html {
@@ -10,7 +41,6 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
 }
 
 ul{

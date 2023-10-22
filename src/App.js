@@ -5,6 +5,8 @@ import MenuSection from "./components/MenuSection/MenuSection";
 import CartOrderNumContext from "./context/CartOrderNumContext";
 import CartWindow from "./components/PopupWindow/CartWindow";
 import CartProvider from './store/CartProvider';
+
+
 function App() {
   const [cartIsShown,setCartIsShown] = useState(false);
   const [orderNum, setOrderNum] = useState(0);
@@ -25,14 +27,14 @@ function App() {
   };
   return (
     <CartProvider>
-    {cartIsShown && <CartWindow onClose={hidCartIsShown}/>}
-<CartOrderNumContext.Provider value={{orderNum: orderNum }}>
+      {cartIsShown && <CartWindow onClose={hidCartIsShown} />}
+      <CartOrderNumContext.Provider value={{ orderNum: orderNum }}>
         <Header changeCartIsShown={showCartIsShown} />
-// </CartOrderNumContext.Provider>
-        <SubHeader />
-        <main>
+      </CartOrderNumContext.Provider>
+      <SubHeader />
+      <main>
         <MenuSection getOrderNum={getOrderNum} />
-        </main>
+      </main>
     </CartProvider>
   );
 }

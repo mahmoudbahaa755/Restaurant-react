@@ -11,7 +11,15 @@
     -o-border-radius: 5%;
     
 }
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    margin-top: 10px;
+    gap: 20px;
 
+}
 .order-amount{
     display: flex;
     flex-direction: column;
@@ -28,7 +36,7 @@
     font-size: 17px;
 }
 .button{
-            background-color: #4D1601;
+            background-color:var(--background-dark);
     color: white;
     padding: 0px 6px;
     text-align: center;
@@ -43,22 +51,27 @@
 
 .up-arrow{
          display: block;
-    width: 10px;
-    height: 10px;
-    border: 8px solid transparent;
-    border-top-color: green;
+    width: 15px;
+    cursor: pointer;
+
+    height: 15px;
+    border: 10px solid transparent;
+    border-top-color:  #106868;
 }
 .down-arrow{
            display: block;
-    width: 10px;
-    height: 10px;
-    border: 8px solid transparent;
-    border-bottom-color: green;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border: 10px solid transparent;
+    border-bottom-color: #106868;
 }
 .amount-button{
         display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
+    
+
 }
 .amount-number{
    font-weight: 700;

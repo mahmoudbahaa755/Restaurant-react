@@ -14,52 +14,9 @@ import useHttp from '../../hooks/useHttp';
 function OrderSection(props) {
     const [menuSection, setMenuSection] = useState(true);
     const [desertMenu, setDessertMenu] = useState([]);
-    // const [desertMenu, setDessertMenu] = useState([
-
-    //     {
-    //         name: 'Donate',
-    //         id: 0,
-    //         description: 'Donate to the cause',
-    //         price: 4.99,
-    //         component: ['Donate'],
-    //         extra: ['Chocolate', 'Coffee', 'White Sauce'],
-    //         amount: 0
-    //     },
-    //     {
-    //         name: 'Chocolate cake',
-    //         id: 1,
-
-    //         description: 'Donate to the cause',
-    //         price: 6.99,
-    //         component: ['Donate'],
-    //         extra: ['Chocolate', 'Coffee', 'White Sauce'],
-    //         amount: 0
-    //     },
-
-    // ]);
+   
     const [mainMenu, setMainMenu] = useState([]);
-    // const [mainMenu, setMainMenu] = useState([{
-    //     name: 'Sushi',
-    //     description: 'Finest fish and veggies',
-    //     id: 0,
-    //     price: '22.99',
-    //     component: ['fish', 'veggies'],
-    //     amount: 0
-    // }, {
-    //     name: 'Burger',
-    //     description: 'Finest burger and fries',
-    //     price: '20.99',
-    //     component: ['Meat', 'Bread', 'Sauce', 'Tomato'],
-    //     amount: 0,
-    //     id: 1
-    // }, {
-    //     name: 'Chicken Burger',
-    //     description: 'Finest burger and fries',
-    //     id: 2,
-    //     price: '20.99',
-    //     component: ['Chicken', 'Bread', 'Sauce', 'Tomato'],
-    //     amount: 0
-    // }]);
+   
     var sum = 0;
    
     const {
@@ -78,7 +35,7 @@ useEffect(() => {
     }, fetchingData);
         console.log(desertMenu);
 
-}, []);
+},[]);
 useEffect(() => {
      const fetchingData = (data) => {
          const n = Object.keys(data);
@@ -90,7 +47,7 @@ useEffect(() => {
 
         }, fetchingData);
     
-}, []);
+},[]);
     var orderNum = 0;
     const cartCtx = useContext(cartContext);
 
@@ -213,6 +170,8 @@ useEffect(() => {
                 }
                 description = {
                     item.description
+                }  img={
+                    item.img
                 }
                 price = {
                     item.price
@@ -248,49 +207,42 @@ useEffect(() => {
             price = {
                 item.price
             }
+            img={
+                item.img
+            }
             component = {
                 item.component
             }
             />
         )
     }))
-
+    console.log(mainMenu);
     return (
 
-
-        <
-        Container >
-        <
-        div className = {
-            style["order-section"]
-        } >
-        <
-        div className = {
-            style['menu-button']
-        } >
-
-        <
-        button type = 'button'
-        className = {
-            style["button"]
-        }
-        value = 'Menu'
-        onClick = {
-            () => setMenuSection(true)
-        } > Menu < /button> <
-        button type = 'button'
-        className = {
-            style["button"]
-        }
-        value = 'Desert'
-        onClick = {
-            () => setMenuSection(false)
-        } > Desert < /button> < /
-        div > {
-            whichMenuTOShow
-        } < /div>  <
-        /Container>
-
+        <Container>
+        <div className={style["order-section"]}>
+          <div className={style['menu-button']}>
+            <button
+              type='button'
+              className={style["button"]}
+              value='Menu'
+              onClick={() => setMenuSection(true)}
+            >
+              Menu
+            </button>
+            <button
+              type='button'
+              className={style["button"]}
+              value='Desert'
+              onClick={() => setMenuSection(false)}
+            >
+              Dessert
+            </button>
+          </div>
+          {whichMenuTOShow}
+        </div>
+      </Container>
+      
     );
 }
 export default OrderSection;

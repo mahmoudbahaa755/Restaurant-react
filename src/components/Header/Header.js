@@ -2,8 +2,8 @@ import React ,{useContext}from "react";
 import style from './Header.module.css'
 import HeaderSvg from "./HeaderSvg";
 import CartOrderNumContext from "../../context/CartOrderNumContext";
-import orderOrderContext from "../../context/orderOrderContext";
-import cartContext from "../../store/cart-context";
+
+
 function Header(props) {
    const orderNum= useContext(CartOrderNumContext)
 
