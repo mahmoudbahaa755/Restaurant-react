@@ -1,4 +1,4 @@
-import React ,{useState,useContext} from "react";
+import React ,{useState} from "react";
 import style from './CartWindow.module.css';
 import OrderedOrder from "./OrderedOrder";
 import TotalPay from "./TotalPay";

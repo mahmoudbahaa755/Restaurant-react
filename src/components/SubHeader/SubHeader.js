@@ -1,6 +1,6 @@
 import React from "react";
 import style from './SubHeader.module.css'
-import subHeaderImg from '../../img/subHeader.png'
+import subHeaderImg from './subHeader.png'
 function SubHeader(){
 
     return(
