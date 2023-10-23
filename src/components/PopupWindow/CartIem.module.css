@@ -1,11 +1,21 @@
 .name{
-   color: crimson;
+   color: var(--text-dark);
     font-size: 26px;
     font-weight: 600;
+    display: flex;
+}
+.CartIem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 10px;
+    gap: 10px;
 }
 .flex{
        display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 150px;
     align-items: center;
 }

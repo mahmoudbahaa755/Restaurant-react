@@ -1,4 +1,4 @@
-import React ,{useReducer} from "react";
+import {useReducer} from "react";
 import cartContext from "./cart-context";
 
 
@@ -12,8 +12,8 @@ import cartContext from "./cart-context";
          const getItemIndex= state.item.findIndex((item)=> item.id === action.item.id);
          const existingItem = state.item[getItemIndex];
          var updatedItems=[];
+         let updatedItem ;
          if(existingItem){
-             let updatedItem ;
              updatedItem={
                  ...existingItem,
                  amount : existingItem.amount+ 1
@@ -22,7 +22,7 @@ import cartContext from "./cart-context";
 
          }
          else{
-           const  updatedItems= state.item.concat(action.item);
+           updatedItems= state.item.concat(action.item);
          }
         const updatedAmount= state.totalAmount + 1*action.item.price;
         return {
@@ -38,7 +38,6 @@ import cartContext from "./cart-context";
         totalAmount: updatedAmount
         };
      }
-     return defaultCartState;
  };
 function CartProvider(props){
    

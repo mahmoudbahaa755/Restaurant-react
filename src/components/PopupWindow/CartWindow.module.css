@@ -13,9 +13,9 @@
     align-items: center;
 }
 .floating-window{
-    background-color: whitesmoke;
-    width: 550px;
-    height: fit-content;
+    background-color: rgb(210, 209, 209);
+    width: 80vh;
+    height: 80vh;
     position: fixed;
     z-index: 15000;
     left: 50%;
@@ -23,10 +23,9 @@
     margin: 40px auto;
     border-radius: 20px;
     padding: 10px;
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .hide-error{
     display: none;

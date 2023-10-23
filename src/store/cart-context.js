@@ -8,7 +8,5 @@ const cartContext = React.createContext({
     addToCart: () => {},
     removeFromCart: () => {},
 });
-console.log(cartContext)
-
 
 export default cartContext;

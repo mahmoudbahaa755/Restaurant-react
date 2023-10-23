@@ -1,6 +1,5 @@
-import React from "react";
-
-const CartOrderNumContext= React.createContext(  {
+import { createContext } from "react";
+const CartOrderNumContext= createContext(  {
     orderNum:0
 
  } );
