@@ -13,7 +13,7 @@ function Header(props) {
       <div className={style['fixed-header']}> 
     <div className="container">
     <div className={style["header"]}>
-          <h1 className={style["logo-header"]}>React Restaurant</h1>
+          <h1 className={style["logo-header"]}>El Talb LL Talbat</h1>
       <div className={style[""]}>
         <div className={style['order-header']}>
            
